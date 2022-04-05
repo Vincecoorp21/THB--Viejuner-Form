@@ -1,0 +1,14 @@
+body {
+}
+form {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+legend {
+  font-size: 20px;
+  font-weight: bold;
+}

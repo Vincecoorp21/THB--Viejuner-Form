@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>The Amazing Form</h2>
+    <form action="">
+      <fieldset>
+        <legend>Datos personales</legend>
+        <label for="name">Nombre:</label><br />
+        <input
+          type="text"
+          id="name"
+          placeholder="Tu nombre aquí"
+          autofocus
+        /><br />
+        <label for="surname">Apellidos:</label><br />
+        <input
+          type="text"
+          id="surname"
+          placeholder="Tus apellidos aquí"
+        /><br />
+        <label for="age">Edad:</label><br />
+        <input type="number" id="age" placeholder="19" min="10" max="100" />
+        <br />
+        <label for="genero"> Selecciona tu género</label><br />
+        <input type="radio" name="genero" value="hombre" /> Hombre<br />
+        <input type="radio" name="genero" value="mujer" /> Mujer<br />
+        ¿Me siento viejuner?:
+        <label for="viejuno"></label><br />
+        <input type="checkbox" name="viejuno" value="si" />Sí
+      </fieldset>
+      <fieldset>
+        <legend>Datos de contacto</legend>
+        <label for="email">Email</label><br />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="ejemplo@gmail.com"
+          required
+        /><br />
+        <label for="tel">Teléfono</label><br />
+        <input
+          type="telef"
+          id="tel"
+          name="tel"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          maxlength="9"
+          placeholder="666555444"
+          required
+        />
+      </fieldset>
+      <fieldset>
+        <legend>Los ladronzuelos de las bicicletas</legend>
+        <label for="fecha">Introduce la fecha</label><br />
+        <input type="date" id="fecha" name="fecha" /><br /><br />
+        <label for="hora">Introduce la hora:</label><br />
+        <input
+          type="time"
+          id="hora"
+          name="hora"
+          min="00:00"
+          max="24:00"
+          required
+        />
+        <br /><br />
+        <label for="color">Introduce el color de la bicicleta</label><br />
+        <input type="color" name="color" value="#EBEDEF" /><br /><br />
+        <label for="rango">Rango de precio en €</label><br />
+        <input
+          type="range"
+          id="rango"
+          name="rango"
+          min="10"
+          max="100"
+          value="50"
+        /><br />
+        <label for="tipo">Tipo de Bicicleta</label><br />
+        <select name="tipo" id="tipo">
+          <optgroup label="Paseo">
+            <option value="señorial" selected>Señorial</option>
+            <option value="anti-plebeyos">Anti-plebeyos</option>
+            <option value="porencimadelhombre">Por encima del Hombro</option>
+          </optgroup>
+          <optgroup label="Montaña">
+            <option value="gamusinos">Gamusinos</option>
+            <option value="hueleflores">Hueleflores premium</option>
+            <option value="fangolover">Fango Lover</option>
+          </optgroup>
+          <br />
+          <optgroup label="Carreras">
+            <option value="metroymedio">Metroymedio</option>
+            <option value="3tarde">3 d ela tarde. Fluorescente edition.</option>
+            <option value="grupitors">Grupitos</option>
+          </optgroup></select
+        ><br /><br />
+        <label for="accesorios">Accesorios</label><br />
+        <select name="accesorios" id="accesorios" multiple>
+          <option value="ruedines">Ruedines</option>
+          <option value="pegatinas">Pegatinas</option>
+          <option value="cestita" selected>Cestita</option>
+          <option value="bombadeaire">Bomba de aire</option>
+          <option value="timbre">Timbre</option>
+          <option value="foco">Foco</option></select
+        ><br /><br />
+        <label>¿Qué marca de bici es?:</label><br />
+        <input list="bicicletas" name="mibici" />
+        <datalist id="bicicletas">
+          <option value="Specialized"></option>
+          <option value="Trek"></option>
+          <option value="Merida"></option>
+          <option value="Scott"></option>
+          <option value="Giant"></option>
+          <option value="Cube"></option>
+          <option value="Lapierre"></option>
+          <option value="Orbea"></option>
+          <option selected value="Cannondale"></option>
+          <option value="BMC"></option>
+          <option value="Canyon"></option>
+          <option value="Look"></option>
+          <option value="Protek"></option>
+          <option value="Megamo"></option>
+          <option value="Pinarello"></option>
+          <option value="Bianchi"></option>
+          <option value="BH"></option>
+          <option value="Factor"></option>
+          <option value="Ghost"></option></datalist
+        ><br /><br />
+        <input type="submit" /><br /><br />
+        <input type="reset" value="Reset" />
+      </fieldset>
+    </form>
+  </body>
+</html>
